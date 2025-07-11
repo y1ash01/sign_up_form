@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./ja.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="subcon">
+            <div class="logo">
+                <img src="./assets/odin-lined.png" alt="logo">
+                <h1>ODIN</h1>
+            </div>
+            <div class="footer">photo by <a rel="noreferrer noopener" target="_blank" href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a rel="noreferrer noopener" target="_blank" href="https://unsplash.com">Unsplash</a></div>
+            <img src="./assets/halie-west-25xggax4bSA-unsplash.jpg" alt="art">
+        </div>
+        <div>
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.
+                
+                <div class="new">You know you want to.</div>
+            </p>
+            <form id="myForm">  
+                    <div>Let's do this!</div>
+                    <div class="wrapper">
+                        <div class="one">
+                            <label for="first_name">FIRST NAME</label>
+                            <input id="first_name" required type="text">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" required>
+                            <label for="pass">PASSWORD</label>
+                            <input type="password" required id="pass" minlength="8">
+                        </div>
+                        <div class="two">
+                            <label for="last_name">LAST NAME</label>
+                            <input id="last_name" required type="text">
+                            <label for="num">PHONE NUMBER</label>
+                            <input type="number" id="num" required>
+                            <label for="con_pass">CONFIRM PASSWORD</label>
+                            <input type="password" required id="con_pass" minlength="8">
+                        </div>
+                    </div>
+                    <button type="submit">Create Account</button>
+            </form>
+            <p> Already have an Account? <a href="./index.html">Log in</a> </p>
+        </div>
+    </div>
+</body>
+</html>

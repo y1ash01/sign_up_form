@@ -1,0 +1,167 @@
+@font-face{
+    font-family: NorseBold;
+    src: url(./assets/Norse-Bold.otf);
+}
+
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.subcon{
+    position:relative;
+}
+
+.logo{
+    font-family: NorseBold;
+    font-size: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    position: absolute;
+    top:15vh;
+    bottom:55vh;
+    left:0;
+    right:0;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo>img{
+    height: 7rem;
+    width: 5rem;
+}
+
+.footer{
+    position: absolute;
+    left:10vw;
+    right:10vh;
+    top:96vh;
+    bottom:2vh;
+    color: white;
+    font-size: large;
+    a{
+        color:beige;
+        text-decoration: none;
+    }
+}
+
+.logo>h1{
+    color:white;
+    font-size: 80px;
+}
+
+.container{
+    display: flex;
+}
+
+img{
+    height:100vh;
+    width:35vw;
+}
+
+.container>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+div>p:first-child{
+    padding: 30px;
+    margin:30px;
+}
+
+.new{
+    margin-left: 60px;
+}
+
+input{
+    border-radius: 5px;
+}
+
+form>div:first-child{
+    padding:20px 80px;
+    font-size: xx-large;
+    font-weight: bold;
+    background-color: rgb(119, 136, 153,0.1);
+}
+
+form>div:nth-of-type(2){
+    background-color: rgb(119, 136, 153,0.1);
+}
+
+form{
+    font-size: x-large;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type='password']:invalid{
+    border-color:red;
+}
+
+input[type='password']:valid{
+    border-color:green;
+}
+
+input{
+    height:30px;
+    width:300px;
+}
+
+input:not([type="password"]):focus {
+    border-color: blue;
+    outline: none;
+    box-shadow: 1px 1px 1px black;
+}
+
+.one{
+    display: flex;
+    flex-direction: column;
+}
+
+.one>input{
+    margin-bottom: 20px;
+}
+
+.two{
+    display: flex;
+    flex-direction: column;
+}
+
+.two>input{
+    margin-bottom: 20px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: flex-start;
+    gap:120px;
+    padding:10px 80px;
+}
+
+button{
+    background-color: #596D48;
+    color: white;
+    font-size: x-large;
+    height: 60px;
+    border-radius: 10px;
+    border:none;
+    width:240px;
+    margin-top: 40px;
+    margin-left:60px;
+}
+
+div>p:last-child{
+    font-size: x-large;
+    font-weight: 400;
+    padding-left: 60px;
+}
